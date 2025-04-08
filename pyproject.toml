@@ -8,12 +8,14 @@ packages = [{include = "occam_agent_params", from="src/python"}]
 [tool.poetry.dependencies]
 python = "^3.11,<3.12"
 pydantic="^2.6.4"
+occam-core = "0.1.0.dev18"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "7.2.2"
 pytest-cov="^4.0.0"
 pytest-xdist = "^3.5.0"
 coverage = "^7.4.4"
+occam-core = {git = "ssh://git@github.com/Occam-AI/occam-core.git", branch = "main"}
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
